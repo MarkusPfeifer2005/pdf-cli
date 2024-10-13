@@ -5,7 +5,10 @@ rm $uninstallName
 touch $uninstallName
 echo "#!/bin/bash" >> $uninstallName
 
+python3 -m venv .venv
 . ./.venv/bin/activate
+pip install pypdf
+pip install pyinstaller
 
 for file in $(ls); do
   if [ ${file:(-3)} == ".py" ]; then

@@ -1,3 +1,5 @@
 *.spec
 dist/
 build/
+uninstall.sh
+.venv/

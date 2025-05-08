@@ -4,3 +4,5 @@ build/
 uninstall.sh
 .venv/
 .idea/
+*.deb
+pdf-cli-*
